@@ -3250,6 +3250,8 @@ with pkgs;
 
   olsrd = callPackage ../tools/networking/olsrd { };
 
+  openzwave = callPackage ../development/libraries/openzwave { };
+
   os-prober = callPackage ../tools/misc/os-prober {};
 
   ossec = callPackage ../tools/security/ossec {};
