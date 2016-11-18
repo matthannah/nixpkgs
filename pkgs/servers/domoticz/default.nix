@@ -1,13 +1,13 @@
 {fetchFromGitHub, stdenv, cmake, boost, zlib, curl, git, openzwave, libudev, pkgconfig}:
 
 stdenv.mkDerivation {
-  name = "domoticz-3.5837";
+  name = "domoticz-3.5877";
 
   src = fetchFromGitHub {
     owner = "domoticz";
     repo = "domoticz";
-    rev = "591a66972a7154044f0e030e1da84d5f1952cb01";
-    sha256 = "0h6lc3hg5ha0g4q91v1q23hsa67kyr3r0x2ag5k0rdxkv8k9fdf8";
+    rev = "6fdf902ea89c835a338c9aadcf8dd26c4b7a6242";
+    sha256 = "0k27qq5vibyjm323kggy7zl4wkqby3w5b6zi5sip1mk7fnknmjjs";
   };
 
   buildInputs = [ cmake boost zlib curl git openzwave libudev pkgconfig ];
